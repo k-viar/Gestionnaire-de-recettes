@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_newrecipe.css">
+    <title>Miam !</title>
+</head>
+
+<body id="main-page-body">
+    <header id="main-page-header">
+        <div id="backoffice-div">
+            <h1 id="main-page-title">Miam !</h1>
+            <p>Back Office</p>
+        </div>
+        <div id="main-page-div-searchbar">
+            <input type="search" name="search" id="search" placeholder="Je cherche...">
+            <div id="div-loupe">
+                <i class="fa-solid fa-magnifying-glass" id="loupe"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form id="add-form" name="formulaire">
+            <section id="first-line">
+                <div>
+                    <label for="title">Titre de la recette :</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div id="category-div">
+                    <p>Catégorie : </p>
+                    <div id="category">
+                        <div>
+                            <input type="radio" id="first-course" name="category" value="Entrée" checked="true">
+                            <label for="first-course">Entrée</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="main-meal" name="category" value="Plat">
+                            <label for="main-meal">Plat</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="dessert" name="category" value="Dessert">
+                            <label for="dessert">Dessert</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="recipe-picture">Lien de la photo de la recette :</label>
+                    <input type="url" id="recipe-picture" name="recipe-picture" required>
+                </div>
+            </section>
+            <section id="second-line">
+                <div>
+                    <label for="preparation-time">Temps de préparation :</label>
+                    <input type="time" id="preparation-time" name="preparation-time" required>
+                </div>
+                <div>
+                    <label for="cooking-time">Temps de cuisson (facultatif) :</label>
+                    <input type="time" id="cooking-time" name="cooking-time">
+                </div>
+            </section>
+            <section>
+                <p id="ingredient-quantity">Veuillez indiquer la quantité devant chaque ingrédient.</p>
+                <div id="ingredients">
+                    <div id="ingredient-main-div1">
+                        <div class="ingredient-div">
+                            <label for="ingredient1">Ingrédient 1 : </label>
+                            <input type="text" id="ingredient1" required>
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient2">Ingrédient 2 : </label>
+                            <input type="text" id="ingredient2" required>
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient3">Ingrédient 3 : </label>
+                            <input type="text" id="ingredient3">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient4">Ingrédient 4 : </label>
+                            <input type="text" id="ingredient4">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient5">Ingrédient 5 : </label>
+                            <input type="text" id="ingredient5">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient6">Ingrédient 6 : </label>
+                            <input type="text" id="ingredient6">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient7">Ingrédient 7 : </label>
+                            <input type="text" id="ingredient7">
+                        </div>
+                    </div>
+                    <div id="ingredient-main-div2">
+                        <div class="ingredient-div">
+                            <label for="ingredient8">Ingrédient 8 : </label>
+                            <input type="text" id="ingredient8">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient9">Ingrédient 9 : </label>
+                            <input type="text" id="ingredient9">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient10">Ingrédient 10 : </label>
+                            <input type="text" id="ingredient10">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient11">Ingrédient 11 : </label>
+                            <input type="text" id="ingredient11">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient12">Ingrédient 12 : </label>
+                            <input type="text" id="ingredient12">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient13">Ingrédient 13 : </label>
+                            <input type="text" id="ingredient13">
+                        </div>
+                        <div class="ingredient-div">
+                            <label for="ingredient14">Ingrédient 14 : </label>
+                            <input type="text" id="ingredient14">
+                        </div>
+                    </div>
+            </section>
+            <section>
+                <p id="steps-list">Liste des étapes :</p>
+                <div id="steps-div">
+                    <div class="steps">
+                        <label for="step1">Etape 1 : </label>
+                        <input type="text" id="step1">
+                    </div>
+                    <div class="steps">
+                        <label for="step2">Etape 2 : </label>
+                        <input type="text" id="step2">
+                    </div>
+                    <div class="steps">
+                        <label for="step3">Etape 3 : </label>
+                        <input type="text" id="step3">
+                    </div>
+                    <div class="steps">
+                        <label for="step4">Etape 4 : </label>
+                        <input type="text" id="step4">
+                    </div>
+                    <div class="steps">
+                        <label for="step5">Etape 5 : </label>
+                        <input type="text" id="step5">
+                    </div>
+                    <div class="steps">
+                        <label for="step6">Etape 6 : </label>
+                        <input type="text" id="step6">
+                    </div>
+                    <div class="steps">
+                        <label for="step7">Etape 7 : </label>
+                        <input type="text" id="step7">
+                    </div>
+                    <div class="steps">
+                        <label for="step8">Etape 8 : </label>
+                        <input type="text" id="step8">
+                    </div>
+                    <div class="steps">
+                        <label for="step9">Etape 9 : </label>
+                        <input type="text" id="step9">
+                    </div>
+                    <div class="steps">
+                        <label for="step10">Etape 10 : </label>
+                        <input type="text" id="step10">
+                    </div>
+                </div>
+            </section>
+            <button>Ajouter</button>
+        </form>
+    </main>
+
+    <script src="script_newrecipe.js"></script>
+</body>
+
+</html>
